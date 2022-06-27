@@ -1,0 +1,40 @@
+BlueParrott iOS SDK v4.0.9
+
+
+Included in zip :
+- BP_iOS_SDK_4.0.9  - Folder containing the SDK Framework file and a docs folder with generated API documentation.
+- BPSDKSampleCode_4.0.9 - Folder containing an XCode project for the SDK Sample App
+- This release notes file
+
+New in 4.0.9
+- Repackaged SDK Archive to work in Xcode Simulator as well as on real devices.
+
+New in 4.0.8
+- Fixed an issue when using the SDK in an app with bitcode enabled.
+- Fixed an issue when Bluetooth is toggled off in iOS pull-down control panel. SDK will now propagate a disconnect event to the app.
+- New properties on BPHeadset 
+	friendlyName - the Bluetooth Friendly Name of the connected headset. If the headset has been disconnected, this will be nil.
+
+
+New in 4.0.5
+- New methods on BPHeadset 
+	setMuteMode
+	setCustomMode:(NSInteger) mode
+	enableSDKMode:(NSString *) appName
+	setBondable:(BOOL) enabled // renamed from enableBondable/disableBondable
+	setAppModeWithAppKey:(NSString *) appKey appName:(NSString *) appName
+	setSpeedDialMode(NSString *) phoneNumber
+- New properties on BPHeadset 
+	autoReconnect
+	buttonMode
+	appKey
+	appName
+	speedDialNumber
+	valuesRead
+- New methods on BPHeadsetListener
+	onValuesRead
+	onEnterpriseValuesRead
+	onBondableUpdate
+	onBondableUpdateFailure:(BPModeUpdateError) reasonCode
+	onReadFailure:(BPReadError) reasonCode
+
