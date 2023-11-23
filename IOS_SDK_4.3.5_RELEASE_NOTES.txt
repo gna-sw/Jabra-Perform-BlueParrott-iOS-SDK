@@ -1,0 +1,11 @@
+BlueParrott iOS SDK v4.3.5
+
+
+Included in this release:
+- BP_iOS_SDK_4.3.5  - Folder containing the SDK Framework file and a docs folder with generated API documentation.
+- BPSDKSampleCode_4.3.5 - Folder containing an XCode project for the SDK Sample App
+- This release notes file
+
+New in 4.3.5
+- Added customerUUID setting to the SDK. This is a unique ID that is assigned to each account/customer and must be set during the development and release of your application.
+- Added support for remoteLogging to allow for improved support in troubleshooting while developing and after release.
